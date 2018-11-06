@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Wonder Hair Salon`,
-    siteUrl: `https://www.wonderhairsalon.com`,
+    title: `MirelesCloud Gatsby Starter`,
+    siteUrl: `https://mirelescloud.com`,
     description: `Blazing fast modern site generator for React`,
   },
   plugins: [
@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Wonder Hair Salon`,
+        name: `MirelesCloud Gatsby Starter`,
         start_url: `/`,
       }
     },
@@ -45,14 +45,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Wonder Hair Salon`,
-        start_url: `/`,
-      }
-    },
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
