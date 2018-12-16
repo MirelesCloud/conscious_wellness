@@ -2,6 +2,7 @@
 ### Gatsby v2
 
 ## Running in development
+`npm install`
 `gatsby develop`
 
 ## Running build
