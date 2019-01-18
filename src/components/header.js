@@ -1,25 +1,55 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from './layout'
 import Navbar from './navbar'
 
-const Header = ({siteTitle}) => (
-  <span>
-    <Navbar/>
-    <div className="text-center header-style caption" >
+const Banner = () => (
+  <div>
+    <StaticQuery
+      query={graphql`
+        query BannerImage {
+          banner: file(relativePath: { eq: "images/home/heather-banner.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 2000, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          logo: file(relativePath: { eq: "images/icon/conscious-wellness-logo-white-12px-03.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 350, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <>
+        <section className="text-center hero-image" style={{
+            backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`,
 
-      <Link
-        to="/"
-      >
-        <h1>{siteTitle}</h1>
-      </Link>
-      <h1 className="display-1" style={{lineHeight:"40%"}}><strong>Wonder</strong></h1>
-      <h1 className="display-3" ><small> Hair Salon</small></h1>
-      <hr style={{backgroundColor:"#a2b9c6", border:"0", height:"1px"}}/>
-      <h2 >Let's wonder together!</h2>
 
-    </div>
-  </span>
+          }}>
+          <Navbar/>
+          <div className="logo-container">
+            <Img fluid={data.logo.childImageSharp.fluid} style={{width: "200px", }}/>
+            <br/>
+            <h2 style={{color:"#fff", fontSize:"4vw"}}>Conscious Wellness</h2>
+          </div>
 
+        </section>
+        </>
+      )}
+      />
+  </div>
+)
+
+const Header = () => (
+  <Layout>
+    <Banner/>
+  </Layout>
 )
 
 export default Header

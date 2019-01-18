@@ -1,27 +1,55 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import { StaticQuery, graphql } from 'gatsby'
 
 const Navbar = () => (
-  <div className="container" id='/'>
-    <nav className="navbar navbar-expand-sm navbar-dark">
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <AnchorLink  className="nav-item nav-link active" href='#/'>Home <span className="sr-only">(current)</span></AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#appointment'>Appointment</AnchorLink>
-          <AnchorLink offset='-400' className="nav-item nav-link" href='#services'>Services</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#pricing'>Pricing</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#gallery'>Gallery</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#hours'>Hours</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#contact'>Contact</AnchorLink>
-
-        </div>
-      </div>
-    </nav>
-  </div>
+  <section>
+    <StaticQuery
+      query={graphql`
+        query LogoQuery {
+          file(relativePath: { eq: "images/icon/conscious-wellness-white.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <>
+        <nav className="navbar navbar-expand-lg navbar-dark nav-background">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a className="navbar-brand" href="https://example.com">Conscious Wellness</a>
+            <ul className="navbar-nav mr-auto mt-lg-0">
+              <li className="nav-item active">
+                <a className="nav-link" href="https://example.com">Home <span className="sr-only">(current)</span></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://example.com">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://example.com">Work with Me</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://example.com">Classes</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://example.com">Testimonials</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://example.com">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+        </>
+      )}
+      />
+  </section>
 
 )
 

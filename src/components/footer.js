@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Footer = () => (
-    <footer className="jumbotron text-center" style={{width:"100%", position:"absolute", borderRadius:" 0 0 5px 5px", fontSize:"14px"}}>
-      <span>&copy;</span><a className="text-gray" href='https://mirelescloud.com' >MirelesCloud - 2018</a>
+  <footer className="jumbotron-fluid text-center py-3" style={{marginBottom:"0"}}>
+    <div className="copyright-text">&copy; 2019 <span>Conscious Wellness - </span> <span> Created by <a href="https://mirelescloud.com"><strong style={{color:"#000"}}>MirelesCloud</strong></a></span>.  All Rights Reserved</div>
+  </footer>
 
-    </footer>
 )
 
 export default Footer

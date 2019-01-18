@@ -1,30 +1,18 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import Layout from './layout'
 
-const Services = (props) => (
+const ServicesTemplate = (props) => (
   <section id='services'>
     <StaticQuery
       query={graphql`
         query ServiceQuery {
-          imageHair1: file(relativePath: {eq: "images/home/hair5.jpg"}) {
+          file(relativePath: {eq: "images/ripple-background.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageHair2: file(relativePath: {eq: "images/home/hair3.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageHair3: file(relativePath: {eq: "images/home/hair4.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
+              fluid(maxWidth: 2000, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
@@ -32,45 +20,49 @@ const Services = (props) => (
       `}
       render={data => (
         <>
-          <div className="container-fluid bg-light standard-border" >
-            <div className="row pt-5">
-              <div className="col-lg">
-                <h3 className="text-center header-style">Our Services</h3>
-                <hr/>
-              </div>
-            </div>
-            <div className="row text-lg-left">
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair1.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Hair Cut</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div>
+         <div className="services services-background" style={{
+              backgroundImage: `url(${data.file.childImageSharp.fluid.src})`
+            }}>
+            <div className="row" style={{
+                background: "rgba(57,84,166,0.75)",
+                zIndex: "2",
+                height: "100%",
+                overflow: "hidden",
+              }}>
+                    <div className="container">
+                      <div className="col-md col-sm text-center pt-4">
+                        <h2 style={{color:"#fff"}}>Our Work</h2>
+                      </div>
+                      <hr/>
+                      <div className="row service-list text-center">
+                        <div className="col-md-6 col-sm-12">
+                          <ul >
+                            <li><FontAwesomeIcon icon={faAngleRight} />  Allergy Treatment</li>
+                            <li><FontAwesomeIcon icon={faAngleRight}/> Intuitive Sessions</li>
+                          </ul>
+                        </div>
+                        <div className="col-md-6 col-sm-12">
+                          <ul >
+                            <li><FontAwesomeIcon icon={faAngleRight} /> Quantum Touch</li>
+                            <li><FontAwesomeIcon icon={faAngleRight} /> Reiki</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair2.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Coloring</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair3.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Skin Care</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
             </div>
           </div>
         </>
       )}
     />
   </section>
+)
 
+const Services = () => (
+  <Layout>
+    <ServicesTemplate/>
+  </Layout>
 )
 
 export default Services

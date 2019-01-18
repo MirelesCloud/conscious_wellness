@@ -6,37 +6,25 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/main.css'
 import '../css/contact.css'
 import { graphql } from 'gatsby'
-
-
-
-//import Section from "../components/test"
-import Layout from "../components/layout"
-import Services from '../components/services'
+import Header from '../components/header'
 import Intro from '../components/intro'
-
-
-import StoreMap from '../components/contact'
-import Gallery from '../components/gallery'
+import Center from '../components/center'
+import Services from '../components/services'
+import About from '../components/about'
+import Contact from '../components/contact'
 import Footer from '../components/footer'
-import Top from '../components/top-button'
-//import Playground from '../components/playground'
-
 
 const TemplateWrapper = ({data}) => (
   <div>
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
-
-    {/*<Test imageHair={data.imageHair.childImageSharp}/>*/}
-
-    <Layout>
-      <Intro/>
-      <Services/>
-      <Gallery images={data.imageGallery.edges}/>
-      <StoreMap/>
-      <Footer/>
-    </Layout>
-    <Top/>
+    <Header/>
+    <Center/>
+    <Intro/>
+    <Services/>
+    <About/>
+    <Contact/>
+    <Footer/>
   </div>
 )
 
