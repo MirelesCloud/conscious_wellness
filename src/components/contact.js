@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Layout from './layout'
 
@@ -33,9 +34,13 @@ const ContactTemplate = () => (
               <div className="container">
                 <div className="text-center pt-5">
                     <h1 style={{color:"#fff"}}>Work with Me</h1>
-                    <div>
-                      <button type="button" className="btn btn-outline-light">Contact Me</button>
-                    </div>
+                      <button type="button" className="btn btn-outline-light">
+                        <ScrollAnimation delay={1000}
+                          animateIn='tada'
+                          initiallyVisible={true}>
+                          Contact Me
+                        </ScrollAnimation>
+                      </button>
                 </div>
               </div>
             </div>

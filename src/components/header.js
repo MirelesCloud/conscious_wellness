@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import Fade from 'react-reveal/Fade'
+
 import Layout from './layout'
 import Navbar from './navbar'
 
@@ -16,7 +18,7 @@ const Banner = () => (
               }
             }
           }
-          logo: file(relativePath: { eq: "images/icon/conscious-wellness-logo-white-12px-03.png"}) {
+          logo: file(relativePath: { eq: "images/icon/conscious-wellness-logo-white-18px-05.png"}) {
             childImageSharp {
               fluid(maxWidth: 350, quality: 100) {
                 ...GatsbyImageSharpFluid
@@ -27,18 +29,20 @@ const Banner = () => (
       `}
       render={data => (
         <>
-        <section className="text-center hero-image" style={{
+        <section className="hero-image" style={{
             backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`,
-
-
           }}>
           <Navbar/>
-          <div className="logo-container">
-            <Img fluid={data.logo.childImageSharp.fluid} style={{width: "200px", }}/>
-            <br/>
-            <h2 style={{color:"#fff", fontSize:"4vw"}}>Conscious Wellness</h2>
-          </div>
+          <figure>
+            <Fade left>
+              <Img fluid={data.logo.childImageSharp.fluid} className="logo text-center"/>
+            </Fade>
+            <Fade right>
+              <figcaption className="logo-caption text-center">Conscious Wellness</figcaption>
+            </Fade>
 
+
+          </figure>
         </section>
         </>
       )}

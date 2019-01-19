@@ -30,12 +30,12 @@ const ServicesTemplate = (props) => (
                 height: "100%",
                 overflow: "hidden",
               }}>
-                    <div className="container">
-                      <div className="col-md col-sm text-center pt-4">
-                        <h2 style={{color:"#fff"}}>Our Work</h2>
+                    <div className="container text-center pt-5">
+                      <div className="header-style">
+                        <p style={{color:"#fff"}}>Our Work</p>
                       </div>
                       <hr/>
-                      <div className="row service-list text-center">
+                      <div className="row service-list">
                         <div className="col-md-6 col-sm-12">
                           <ul >
                             <li><FontAwesomeIcon icon={faAngleRight} />  Allergy Treatment</li>

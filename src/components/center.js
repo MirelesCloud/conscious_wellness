@@ -14,20 +14,19 @@ const CenterTemplate =(props) => (
               }
             }
           }
-
         }
       `}
       render={data => (
         <>
-          <div className="center-background mt-4">
+          <div className="center-background my-4">
             <div className="row" style={{
                 background: "rgba(57,84,166,1.0)",
                 zIndex: "2",
-                height: "70%",
+                height: "100%",
                 overflow: "hidden",
               }}>
-              <div className="header-container">
-                <h1 className="header-style">Your resource for optimal health</h1>
+              <div className="container text-center">
+                <p className="header-style text-center pt-5">Your resource for optimal health</p>
               </div>
             </div>
           </div>

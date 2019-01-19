@@ -24,6 +24,7 @@ const Layout = ({children}) => (
             ]}
           >
             <html lang="en" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
           </Helmet>
         </>
       )}

@@ -1,11 +1,13 @@
 import React from "react"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
+import { graphql } from 'gatsby'
 
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/main.css'
 import '../css/contact.css'
-import { graphql } from 'gatsby'
+import '../css/responsive.css'
+
 import Header from '../components/header'
 import Intro from '../components/intro'
 import Center from '../components/center'

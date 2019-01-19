@@ -1,4 +1,4 @@
-# MirelesCloud Gatsby Starter
+# Conscious Wellness
 ### Gatsby v2
 
 ## Running in development
@@ -13,6 +13,11 @@
 `gatsby-plugin-google-fonts`
 `gatsby-transformer-sharp`
 `gatsby-plugin-sharp`
+`react-reveal`
+`react-anchor-link-smooth-scroll`
+`google-map-react`
+`react-animate-on-scroll`
+
 
 ## CSS
 `Bootstrap 4`
