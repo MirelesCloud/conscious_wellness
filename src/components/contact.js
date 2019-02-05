@@ -10,7 +10,7 @@ const ContactTemplate = () => (
     <StaticQuery
       query={graphql`
         query ContactQuery {
-          file(relativePath: { eq: "images/zen-background.jpg" }) {
+          file(relativePath: { eq: "images/amilcar-vanden-bouch-1189362-unsplash.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -21,20 +21,15 @@ const ContactTemplate = () => (
       `}
       render={data => (
         <>
-        <div className="contact contact-background" style={{
+        <div className="jumbotron contact-background" style={{
             backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
 
           }}>
-            <div style={{
-              background: "rgba(57,84,166,0.75)",
-              zIndex: "2",
-              height: "100%",
-              overflow: "hidden",
-              }}>
+
               <div className="container">
                 <div className="text-center pt-5">
-                    <h1 style={{color:"#fff"}}>Work with Me</h1>
-                      <button type="button" className="btn btn-outline-light">
+                    <h1 className="display-2" style={{color:"#fff"}}>Work with Me</h1>
+                      <button type="button" className="btn btn-outline-light btn-lg">
                         <ScrollAnimation delay={1000}
                           animateIn='tada'
                           initiallyVisible={true}>
@@ -43,7 +38,7 @@ const ContactTemplate = () => (
                       </button>
                 </div>
               </div>
-            </div>
+
         </div>
         </>
       )}

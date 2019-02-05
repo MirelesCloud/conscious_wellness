@@ -1,4 +1,8 @@
 /*Global*/
+.theme-background {
+  background-color: #3954a5;
+}
+
 .theme-color {
   color: #3954a5;
 }
@@ -47,7 +51,7 @@
 
 .header-container {
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -57,7 +61,7 @@
   color: #fff;
 }
 .logo {
-  width: 175px;
+  width: 110px;
   position: absolute;
   top: 5%;
   left: 35%;
@@ -72,19 +76,19 @@
 .logo-caption {
   vertical-align: middle;
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   background: rgba(72,72,72,0.45);
   color: #fff;
-  padding: 0.2rem;
+  padding: 0.3rem;
   position: absolute;
-  top: 60%;
-  left: 12%;
+  top: 30%;
+  left: 35%;
   transform: translate(-50%, 50%);
 }
 .logo-container {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 45%;
   transform: translate(-50%, 50%);
 }
@@ -101,12 +105,10 @@
 
 /*Services*/
 .services-background {
-  height: 350px;
   background-position: center;
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  color: #3954a5;
 }
 
 .services hr {
@@ -135,9 +137,42 @@
   background-repeat: no-repeat;
 }
 
+.about-title {
+  position: relative;
+  margin-bottom: 17px;
+}
+.about-title h2 {
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.about-title h2:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 127px;
+    height: 1px;
+    background: #3954a5;
+}
+.about-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 101px;
+    height: 1px;
+    left: 0;
+    background: #3954a5;
+}
+
+.about-title span{
+  color: #3954a5;
+}
+
 /*Contact Section*/
 .contact-background {
-  height: 220px;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -175,39 +210,6 @@
   border-color: #839ddd;
 }
 /*Keep and delete what we need*/
-.sec-title {
-  position: relative;
-  margin-bottom: 17px;
-}
-.sec-title h2 {
-    position: relative;
-    font-size: 40px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-    font-weight: 700;
-    margin-top: -5px;
-}
-.sec-title h2:before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    width: 127px;
-    height: 1px;
-    background:#3954a5;
-}
-.sec-title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    width: 101px;
-    height: 1px;
-    left: 0;
-    background:#3954a5;
-}
-
-.sec-title span{
-  color: #3954a5;
-}
 
 
 .scroll-top {

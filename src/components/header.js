@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Fade from 'react-reveal/Fade'
 
 import Layout from './layout'
 import Navbar from './navbar'
@@ -34,14 +33,11 @@ const Banner = () => (
           }}>
           <Navbar/>
           <figure>
-            <Fade left>
-              <Img fluid={data.logo.childImageSharp.fluid} className="logo text-center"/>
-            </Fade>
-            <Fade right>
-              <figcaption className="logo-caption text-center">Conscious Wellness</figcaption>
-            </Fade>
-
-
+            <Img fluid={data.logo.childImageSharp.fluid} className="logo text-center"/>
+            <figcaption className="logo-caption text-center">
+              <p className="display-2">Heather Watson</p>
+              <p>Conscious Wellness</p>
+            </figcaption>
           </figure>
         </section>
         </>

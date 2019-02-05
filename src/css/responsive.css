@@ -51,15 +51,15 @@
 
   .logo {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 50%);
   }
 
   .logo-caption {
     position: absolute;
-    top: 65%;
-    left: 5%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, 50%);
   }
 }

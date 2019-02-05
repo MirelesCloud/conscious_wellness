@@ -4,13 +4,13 @@ import typography from '../utils/typography'
 import { graphql } from 'gatsby'
 
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootswatch/dist/yeti/bootstrap.min.css'
 import '../css/main.css'
 import '../css/contact.css'
 import '../css/responsive.css'
 
 import Header from '../components/header'
 import Intro from '../components/intro'
-import Center from '../components/center'
 import Services from '../components/services'
 import About from '../components/about'
 import Contact from '../components/contact'
@@ -21,7 +21,6 @@ const TemplateWrapper = ({data}) => (
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
     <Header/>
-    <Center/>
     <Intro/>
     <Services/>
     <About/>
