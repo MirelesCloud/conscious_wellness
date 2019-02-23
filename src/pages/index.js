@@ -9,23 +9,14 @@ import '../css/main.css'
 import '../css/contact.css'
 import '../css/responsive.css'
 
-import Header from '../components/header'
-import Intro from '../components/intro'
-import Services from '../components/services'
-import About from '../components/about'
-import Contact from '../components/contact'
-import Footer from '../components/footer'
+import Home from './home/home.js'
 
 const TemplateWrapper = ({data}) => (
   <div>
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
-    <Header/>
-    <Intro/>
-    <Services/>
-    <About/>
-    <Contact/>
-    <Footer/>
+    <Home/>
+
   </div>
 )
 

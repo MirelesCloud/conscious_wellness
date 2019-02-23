@@ -1,17 +1,51 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import Layout from './layout'
 
-const ServicesTemplate = (props) => (
+import Img from 'gatsby-image'
+
+const Services = (props) => (
   <section id='services'>
     <StaticQuery
       query={graphql`
         query ServiceQuery {
-          file(relativePath: {eq: "images/amilcar-vanden-bouch-1189362-unsplash.jpg"}) {
+          service: file(relativePath: {eq: "images/scott-webb-186137-unsplash.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 2000, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          logo: file(relativePath: {eq: "images/icon/conscious-wellness-logo-white-18px-05.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          allergy: file(relativePath: {eq: "images/lukasz-szmigiel-413-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          reiki: file(relativePath: {eq: "images/reiki.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          intuitive: file(relativePath: {eq: "images/dingzeyu-li-773-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          quantum: file(relativePath: {eq: "images/cristian-newman-141875-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -20,66 +54,67 @@ const ServicesTemplate = (props) => (
       `}
       render={data => (
         <>
-        <div className="jumbotron services services-background" style={{
-             backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
-           }}>
-             <h1 className="display-4" style={{color:"#fff"}}>My Work</h1>
-             <p className="lead" style={{color:"#fff"}}>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-             <hr className="my-4" style={{backgroundColor:"#fff"}}/>
-             <div className="row">
-               <div className="col-sm-6 col-md-3">
-                 <div className="card border-secondary mb-3" style={{maxWidth: "20rem"}}>
-                   <div className="card-header">Allergy Treatment</div>
-                     <div className="card-body">
-                       <h4 className="card-title">Allergy Treatment</h4>
-                       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <p className="card-text">More  <FontAwesomeIcon icon={faAngleRight} style={{verticalAlign:"middle"}}/></p>
-                     </div>
-                 </div>
-               </div>
-               <div className="col-sm-6 col-md-3">
-                 <div className="card border-secondary mb-3" style={{maxWidth: "20rem"}}>
-                   <div className="card-header">Reiki</div>
-                     <div className="card-body">
-                       <h4 className="card-title">Reiki</h4>
-                       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <p className="card-text">More  <FontAwesomeIcon icon={faAngleRight} style={{verticalAlign:"middle"}}/></p>
-                     </div>
-                 </div>
-               </div>
-               <div className="col-sm-6 col-md-3">
-                 <div className="card border-secondary mb-3" style={{maxWidth: "20rem"}}>
-                   <div className="card-header">Intuitive Sessions</div>
-                     <div className="card-body">
-                       <h4 className="card-title">Intuitive Sessions</h4>
-                       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <p className="card-text">More  <FontAwesomeIcon icon={faAngleRight} style={{verticalAlign:"middle"}}/></p>
+        <section className="services">
+           <div className="jumbotron">
+             <div className="container">
+               <h1 className="title">My Services</h1>
+               <hr className="mb-5"/>
+               <div className="row ">
+                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5" >
+                   <div className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.allergy.childImageSharp.fluid} />
 
+                     </figure>
+                     <div className="service-description">
+                       <h1>Allergy Treatment</h1>
                      </div>
+                   </div>
+
                  </div>
-               </div>
-               <div className="col-sm-6 col-md-3">
-                 <div className="card border-secondary mb-3" style={{maxWidth: "20rem"}}>
-                   <div className="card-header">Quantum Touch</div>
-                     <div className="card-body">
-                       <h4 className="card-title">Quantum Touch</h4>
-                       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <p className="card-text">More  <FontAwesomeIcon icon={faAngleRight} style={{verticalAlign:"middle"}}/></p>
+                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                   <div className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.reiki.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h1>Reiki</h1>
                      </div>
+                   </div>
+
+                 </div>
+                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                   <div className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.quantum.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h1>Quantum Biofeedback</h1>
+                     </div>
+                   </div>
+
+                 </div>
+                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                   <div className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.intuitive.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h1>Intuitive Sessions</h1>
+                     </div>
+                   </div>
+
                  </div>
                </div>
              </div>
            </div>
+
+        </section>
+
         </>
       )}
     />
   </section>
-)
-
-const Services = () => (
-  <Layout>
-    <ServicesTemplate/>
-  </Layout>
 )
 
 export default Services

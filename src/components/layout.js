@@ -2,6 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Navbar from './navbar'
+import Footer from './footer'
+
 const Layout = ({children}) => (
   <div >
     <StaticQuery
@@ -50,9 +53,11 @@ const Layout = ({children}) => (
         </>
       )}
     />
+  <Navbar/>
     <div>
       {children}
     </div>
+  <Footer/>
 
   </div>
 )

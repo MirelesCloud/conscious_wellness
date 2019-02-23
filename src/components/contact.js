@@ -2,15 +2,12 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Layout from './layout'
-
-
-const ContactTemplate = () => (
+const Contact = () => (
   <section>
     <StaticQuery
       query={graphql`
         query ContactQuery {
-          file(relativePath: { eq: "images/amilcar-vanden-bouch-1189362-unsplash.jpg" }) {
+          file(relativePath: { eq: "images/joseph-barrientos-22900-unsplash.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -28,8 +25,9 @@ const ContactTemplate = () => (
 
               <div className="container">
                 <div className="text-center pt-5">
-                    <h1 className="display-2" style={{color:"#fff"}}>Work with Me</h1>
-                      <button type="button" className="btn btn-outline-light btn-lg">
+                    <h1 className="display-1 contact-header text-capitalize" style={{color:"#fff"}}>Work with Me</h1>
+                    <br/>
+                      <button type="button" className="btn btn-outline-dark btn-lg">
                         <ScrollAnimation delay={1000}
                           animateIn='tada'
                           initiallyVisible={true}>
@@ -44,12 +42,6 @@ const ContactTemplate = () => (
       )}
     />
   </section>
-)
-
-const Contact = () => (
-  <Layout>
-    <ContactTemplate/>
-  </Layout>
 )
 
 export default Contact

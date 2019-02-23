@@ -1,15 +1,13 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
-import Layout from './layout'
-
-const AboutTemplate = () => (
+const About = () => (
   <div>
     <StaticQuery
       query={graphql`
         query AboutQuery {
-          file(relativePath: { eq: "images/home/about.jpg" }) {
+          file(relativePath: { eq: "images/home/heather-square.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -33,12 +31,11 @@ const AboutTemplate = () => (
               <div className="col-md-6 col-sm-12 col-xs-12">
                 <div >
                   <div className="about-title">
-                      <h2>About <span className="theme-color">Heather</span></h2>
+                      <p>About <span className="theme-color">Heather</span></p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,</p>
-                   <p className="style-2">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit.</p>
+                   <p className="style-2">As a wellness educator since 2000, Heather Watson is passionate about helping people to improve their health. Over the years, she has worked with several hospitals to create wellness programs, plan and coordinate health conferences and produce a medical talk radio show.  In 2005, Heather created Conscious Wellness with the mission to help heal her clients and empower them to attain the optimal health they want and deserve.</p>
                    <div className="link_btn">
-                       <a href="about.html" className="btn btn-outline-dark btn-lg">Read More</a>
+                       <Link to="/about" className="btn btn-outline-dark btn-lg">Read More</Link>
                    </div>
                 </div>
               </div>
@@ -50,12 +47,6 @@ const AboutTemplate = () => (
     />
   </div>
 
-)
-
-const About = () => (
-  <Layout>
-    <AboutTemplate/>
-  </Layout>
 )
 
 export default About

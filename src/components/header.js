@@ -1,16 +1,14 @@
 import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
-import Layout from './layout'
-import Navbar from './navbar'
+
 
 const Banner = () => (
   <div>
     <StaticQuery
       query={graphql`
         query BannerImage {
-          banner: file(relativePath: { eq: "images/home/heather-banner.jpg" }) {
+          banner: file(relativePath: { eq: "images/joseph-barrientos-22900-unsplash.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -24,21 +22,33 @@ const Banner = () => (
               }
             }
           }
+          heather: file(relativePath: { eq: "images/home/heather-square.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
         }
       `}
       render={data => (
         <>
-        <section className="hero-image" style={{
+        <section className="jumbotron hero-image" style={{
             backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`,
           }}>
-          <Navbar/>
-          <figure>
-            <Img fluid={data.logo.childImageSharp.fluid} className="logo text-center"/>
-            <figcaption className="logo-caption text-center">
-              <p className="display-2">Heather Watson</p>
-              <p>Conscious Wellness</p>
-            </figcaption>
-          </figure>
+          <div className="container">
+            <div className="row text-center">
+
+              <div className="col-md-12 col-sm-12 col-xs-12" >
+                <div className="header-container" >
+                  <p className="heather-watson">Heather Watson</p>
+                  <hr />
+                  <p style={{fontSize:"1.8rem"}}>Empowering You to Optimal Health</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </section>
         </>
       )}
@@ -46,10 +56,6 @@ const Banner = () => (
   </div>
 )
 
-const Header = () => (
-  <Layout>
-    <Banner/>
-  </Layout>
-)
 
-export default Header
+
+export default Banner

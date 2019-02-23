@@ -37,11 +37,14 @@
 
 
 @media (max-width: 471px){
+  .services .jumbotron .container {
+    background-color: #green;
+
+  }
 }
 
 @media only screen and (max-width: 430px){
   .hero-image{
-
     background-position: left;
     background-size: cover;
     position: relative;
@@ -61,6 +64,10 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, 50%);
+  }
+
+  .services .tile {
+    color: blue;
   }
 }
 
