@@ -366,27 +366,35 @@
 }
 
 /*Contact Section*/
-.contact-header {
-  vertical-align: middle;
-  display: block;
-  font-size: 3.5rem;
-  color: #fff;
-  background: rgba(72,72,72,0.25);
-  padding: 0.5rem;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+.contact {
+
 }
 
-.contact-background {
+.contact .jumbotron {
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   color: #3954a5;
+
 }
+
+.contact .contact-container {
+  color: #fff
+}
+.contact-header {
+  position
+  display: block;
+  font-size: 2rem;
+  background: rgba(39,62,84,0.42);
+  padding: 0.5rem;
+  position: relative;
+
+
+}
+
+
 
 /*Gallery Section*/
 .gallery {

@@ -18,26 +18,31 @@ const Contact = () => (
       `}
       render={data => (
         <>
-        <div className="jumbotron contact-background" style={{
-            backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
+        <section className="contact">
+          <div className="jumbotron" style={{
+              backgroundImage: `url(${data.file.childImageSharp.fluid.src})`,
 
-          }}>
+            }}>
+          <div className="container">
+            <div className="row">
+                <div className="col-md-12 col-sm-12 col-xs-12 text-center">
+                  <div className="contact-container ">
+                    <p className="contact-header text-uppercase" style={{color:"#fff"}}>Work with Me</p>
+                    <button type="button" className="btn btn-outline-light btn-lg mt-5">
+                      <ScrollAnimation delay={1000}
+                        animateIn='tada'
+                        initiallyVisible={true}>
+                        Contact Me
+                      </ScrollAnimation>
+                    </button>
+                  </div>
 
-              <div className="container">
-                <div className="text-center pt-5">
-                    <h1 className="display-1 contact-header text-capitalize" style={{color:"#fff"}}>Work with Me</h1>
-                    <br/>
-                      <button type="button" className="btn btn-outline-dark btn-lg">
-                        <ScrollAnimation delay={1000}
-                          animateIn='tada'
-                          initiallyVisible={true}>
-                          Contact Me
-                        </ScrollAnimation>
-                      </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-        </div>
         </>
       )}
     />
