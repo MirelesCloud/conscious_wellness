@@ -1,13 +1,15 @@
 const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
 
-  const aboutPageTemplate = path.resolve(`src/templates/aboutTemplate.js`)
+  const { createPage } = actions
+  const servicePageTemplate = path.resolve(`src/templates/servicesTemplate.js`)
 
   return graphql(`
     {
-      allMarkdownRemark {
+      services: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/services/*md"}}
+      ) {
         edges {
           node {
             frontmatter {
@@ -22,11 +24,11 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.services.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: aboutPageTemplate,
-        context: {},
+        component: servicePageTemplate,
+        contect: {},
       })
     })
   })

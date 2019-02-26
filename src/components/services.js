@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 import Img from 'gatsby-image'
 
@@ -61,7 +61,7 @@ const Services = (props) => (
                <hr className="mb-5"/>
                <div className="row ">
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5" >
-                   <div className="service-container">
+                   <Link to="/allergies" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.allergy.childImageSharp.fluid} />
 
@@ -69,41 +69,40 @@ const Services = (props) => (
                      <div className="service-description">
                        <h1>Allergy Treatment</h1>
                      </div>
-                   </div>
+                   </Link>
 
                  </div>
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
-                   <div className="service-container">
+                   <Link to="/reiki" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.reiki.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h1>Reiki</h1>
                      </div>
-                   </div>
+                   </Link>
 
                  </div>
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
-                   <div className="service-container">
+                   <Link to="/biofeedback" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.quantum.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Quantum Biofeedback</h1>
+                       <h1>Biofeedback</h1>
                      </div>
-                   </div>
+                   </Link>
 
                  </div>
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
-                   <div className="service-container">
+                   <Link to="/intuitive-sessions" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.intuitive.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h1>Intuitive Sessions</h1>
                      </div>
-                   </div>
-
+                   </Link>
                  </div>
                </div>
              </div>

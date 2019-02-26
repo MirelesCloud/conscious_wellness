@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `MirelesCloud Gatsby Starter`,
-    siteUrl: `https://mirelescloud.com`,
-    description: `Blazing fast modern site generator for React`,
+    title: `Heather Watson`,
+    siteUrl: `https://consciouswellness.com`,
+    description: `Heather Watson Professional Site`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         name: `MirelesCloud Gatsby Starter`,
         start_url: `/`,
+      }
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        default: require.resolve(`./src/components/layout.js`)
       }
     },
     {
@@ -23,11 +30,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       }
     },
-    `gatsby-transformer-remark`,
     {
    resolve: `gatsby-source-filesystem`,
    options: {
@@ -53,7 +67,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        maxWidth: 590,
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

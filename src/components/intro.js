@@ -20,23 +20,28 @@ const Intro= () => (
             }
           }
         }
+        featureBackground: file(relativePath: {eq: "images/icon/conscious-wellness-logo-04.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 2048) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
       <>
       <section>
-        <div className="feature">
+
           <div className="container">
             <div className="row">
-              <div className="col-md-12 col-sm-12 col-xs-12">
-
-                  <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
-
+              <div className="col-md-6 col-sm-12 col-xs-12">
+                <div className="feature">
+                <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
               </div>
             </div>
           </div>
         </div>
-
         <div className="jumbotron intro" style={{
             backgroundImage: `url(${data.background.childImageSharp.fluid.src})`
           }}>

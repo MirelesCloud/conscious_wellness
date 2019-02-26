@@ -23,7 +23,7 @@ const About = () => (
             <div className="row">
               <div className="col-md-6 col-sm-12 col-xs-12">
                 <figure style={{
-                    maxWidth:"100%", height:"auto"
+                    maxWidth:"80%", height:"auto"
                   }}>
                   <Img fluid={data.file.childImageSharp.fluid}/>
                 </figure>

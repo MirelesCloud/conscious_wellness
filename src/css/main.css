@@ -35,10 +35,7 @@
   height: auto;
   margin-right: 0px;
   margin-right: 50px
-
 }
-
-
 
 /*Header*/
 .hero-image {
@@ -117,7 +114,6 @@
   background-repeat: no-repeat;
   overflow: hidden;
   color: #fff;
-
 }
 
 .intro .container {
@@ -136,7 +132,6 @@
 
 .intro .lead {
   font-size: 1.5rem;
-
 }
 
 .intro p {
@@ -152,11 +147,7 @@
   position: relative;
   max-width: 400px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-
 
 .heather-watson {
   font-size: 4rem;
@@ -175,7 +166,6 @@
 
 /*Services*/
 .services {
-
 }
 
 .services .container {
@@ -184,17 +174,12 @@
   margin-left:auto;
   padding-top: 50px;
   padding-bottom: 50px;
-
-
 }
 
 .services .title {
   font-size: 3rem;
   font-weight: 100;
-
-
 }
-
 
 .services .jumbotron {
   color: rgba(72,72,72,0.9);
@@ -207,8 +192,6 @@
   padding: 50px;
 }
 
-
-
 .services .service-container {
   transition: transform .9s;
 }
@@ -217,7 +200,6 @@
   -webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
-
 
 .service-item {
   border-radius: 100%;
@@ -232,15 +214,11 @@
 
 }
 
-
-
-
 .service-item:hover{
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
   background-color: #000;
   opacity: 0.5;
-
 }
 
 .service-description {
@@ -394,12 +372,16 @@
 
 }
 
-
-
 /*Gallery Section*/
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+/*Footer*/
+footer {
+  margin-top: 100px;
+  position: relative;
 }
 
 /*Button Style*/
