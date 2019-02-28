@@ -1,5 +1,5 @@
 ---
 path: "/intuitive"
 title: "Intuitive Sessions"
-image: "../../images/masaaki-komori-618447-unsplash.jpg"
+image: "../../images/dingzeyu-li-773-unsplash.jpg"
 ---

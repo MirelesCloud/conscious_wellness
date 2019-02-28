@@ -1,16 +1,21 @@
 import React from "react"
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from '../utils/typography'
 import { graphql } from 'gatsby'
 
-import Home from './home/home.js'
+import Layout from '../components/layout'
+import Banner from '../components/header'
+import Intro from '../components/intro'
+import Services from '../components/services'
+import About from '../components/about'
+import Contact from '../components/contact'
 
 const TemplateWrapper = ({data}) => (
-  <div>
-    <TypographyStyle typography={typography} />
-    <GoogleFont typography={typography} />
-    <Home/>
-  </div>
+  <Layout>
+    <Banner/>
+    <Intro/>
+    <Services/>
+    <About/>
+    <Contact/>
+  </Layout>
 )
 
 export default TemplateWrapper

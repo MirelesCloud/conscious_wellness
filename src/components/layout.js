@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from '../utils/typography'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootswatch/dist/yeti/bootstrap.min.css'
 import '../css/main.css'
@@ -11,7 +13,7 @@ import Navigation from './navbar'
 import Footer from './footer'
 
 const Layout = ({children}) => (
-  <div >
+
     <StaticQuery
       query={graphql`
     query SiteTitleQuery {
@@ -55,16 +57,16 @@ const Layout = ({children}) => (
             {/*Animation*/}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
           </Helmet>
+          <TypographyStyle typography={typography} />
+          <GoogleFont typography={typography} />
+          <Navigation/>
+            <div>
+              {children}
+            </div>
+          <Footer/>
         </>
       )}
     />
-  <Navigation/>
-    <div>
-      {children}
-    </div>
-  <Footer/>
-
-  </div>
 )
 
 export default Layout
