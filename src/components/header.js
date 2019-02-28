@@ -44,10 +44,17 @@ const Banner = () => (
                   <p style={{
                       fontSize:"4.5rem",
                       fontWeight:"300",
+                      lineHeight:"2rem",
+
                     }}
                    >
                     Heather Watson
                   </p>
+                  <p style={{
+                      fontSize:"1.3rem",
+                      fontWeight:"100",
+
+                    }}>Holistic Health Practioner - Wellness Educator</p>
                   <hr />
                   <p style={{fontSize:"1.8rem"}}>Empowering You to Optimal Health</p>
                 </div>
