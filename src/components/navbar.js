@@ -37,39 +37,37 @@ export default class Navigation extends React.Component {
               <NavItem className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </NavItem>
-
               <NavItem className="nav-item">
-                <a className="nav-link" href="https://example.com">Classes</a>
+                <Link className="nav-link" to="/classes">Classes</Link>
               </NavItem>
               <NavItem className="nav-item">
-                <a className="nav-link" href="https://example.com">Testimonials</a>
+                <Link className="nav-link" to="/testimonials">Testimonials</Link>
               </NavItem>
               <NavItem className="nav-item">
-                <a className="nav-link" href="https://example.com">Contact</a>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </NavItem>
-              <UncontrolledDropdown className="nav-item" nav-item nav inNavbar>
-                <DropdownToggle nav caret>
+              <UncontrolledDropdown className="nav-item" nav inNavbar>
+                <DropdownToggle className="nav-link" nav caret>
                   Work with Me
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Allergy Treatment
+                    <Link className="nav-link" to="/allergy">Allergy Treatment</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    Reiki
+                  <Link className="nav-link" to="/reiki">Reiki</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    Biofeedback
+                    <Link className="nav-link" to="/biofeedback">Biofeedback</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    Intuitive Sessions
+                    <Link className="nav-link" to="/intuitive">Intuitive Sessions</Link>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
                   Corporate Events
                   </DropdownItem>
                 </DropdownMenu>
-
               </UncontrolledDropdown>
             </ul>
           </Collapse>
