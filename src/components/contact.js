@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const Contact = () => (
@@ -28,13 +28,16 @@ const Contact = () => (
                 <div className="col-md-12 col-sm-12 col-xs-12 text-center">
                   <div className="contact-container ">
                     <p className="contact-header text-uppercase" style={{color:"#fff"}}>Work with Me</p>
-                    <button type="button" className="btn btn-outline-light btn-lg mt-5">
-                      <ScrollAnimation delay={1000}
-                        animateIn='tada'
-                        initiallyVisible={true}>
-                        Contact Me
-                      </ScrollAnimation>
-                    </button>
+                    <Link to="/contact">
+                      <button type="button" className="btn btn-outline-dark btn-lg mt-5">
+                        <ScrollAnimation delay={1000}
+                          animateIn='tada'
+                          initiallyVisible={true}>
+                          Contact Me
+                        </ScrollAnimation>
+                      </button>
+                    </Link>
+
                   </div>
 
                 </div>

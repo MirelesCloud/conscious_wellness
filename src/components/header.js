@@ -10,7 +10,7 @@ const Banner = () => (
         query BannerImage {
           banner: file(relativePath: { eq: "images/joseph-barrientos-22900-unsplash.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 2000, quality: 100) {
+              fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -41,7 +41,13 @@ const Banner = () => (
 
               <div className="col-md-12 col-sm-12 col-xs-12" >
                 <div className="header-container" >
-                  <p className="heather-watson">Heather Watson</p>
+                  <p style={{
+                      fontSize:"4.5rem",
+                      fontWeight:"300",
+                    }}
+                   >
+                    Heather Watson
+                  </p>
                   <hr />
                   <p style={{fontSize:"1.8rem"}}>Empowering You to Optimal Health</p>
                 </div>

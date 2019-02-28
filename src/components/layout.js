@@ -1,8 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootswatch/dist/yeti/bootstrap.min.css'
+import '../css/main.css'
+import '../css/contact.css'
+import '../css/responsive.css'
 
-import Navbar from './navbar'
+import Navigation from './navbar'
 import Footer from './footer'
 
 const Layout = ({children}) => (
@@ -53,7 +58,7 @@ const Layout = ({children}) => (
         </>
       )}
     />
-  <Navbar/>
+  <Navigation/>
     <div>
       {children}
     </div>

@@ -6,7 +6,7 @@ const Intro= () => (
   <StaticQuery
     query={graphql`
       query IntroQuery {
-        feature: file(relativePath: { eq: "images/home/heather-main.jpg"}) {
+        feature: file(relativePath: { eq: "images/heather-profile.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -40,6 +40,11 @@ const Intro= () => (
                 <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
               </div>
             </div>
+            <div className="col-md-6 col-sm-12 col-xs-12">
+              <div className="feature">
+
+            </div>
+          </div>
           </div>
         </div>
         <div className="jumbotron intro" style={{

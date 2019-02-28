@@ -2,15 +2,18 @@ module.exports = {
   siteMetadata: {
     title: `Heather Watson`,
     siteUrl: `https://consciouswellness.com`,
-    description: `Heather Watson Professional Site`,
+    description: `Heather Watson - Conscious Wellness`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MirelesCloud Gatsby Starter`,
+        name: `Heather Watson`,
         start_url: `/`,
+        background_color: `#fff`,
+        display: "standalone",
+        crossOrigin: `use-credentials`
       }
     },
     {

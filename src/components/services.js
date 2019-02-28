@@ -61,7 +61,7 @@ const Services = (props) => (
                <hr className="mb-5"/>
                <div className="row ">
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5" >
-                   <Link to="/allergies" className="service-container">
+                   <Link to="/allergy" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.allergy.childImageSharp.fluid} />
 
@@ -95,7 +95,7 @@ const Services = (props) => (
 
                  </div>
                  <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
-                   <Link to="/intuitive-sessions" className="service-container">
+                   <Link to="/intuitive" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.intuitive.childImageSharp.fluid}/>
                      </figure>
