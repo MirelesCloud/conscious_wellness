@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
@@ -17,9 +17,15 @@ export default function aboutTemplate({ data }) {
           </div>
           <div className="col-md-8 col-sm-12 col-xs-12">
             <div
-
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+            <div className="text-center">
+              <Link to="/contact">
+                  <button type="button" className="btn btn-outline-dark btn-lg mt-5">
+                      Contact Me
+                  </button>
+                </Link>
+            </div>
           </div>
         </div>
       </div>
