@@ -28,6 +28,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <Navbar className="navbar navbar-lg navbar-expand-lg navbar-light bg-light">
+
         <NavbarToggler  onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav mr-auto mt-lg-0">

@@ -40,7 +40,7 @@ const Intro= () => (
                 <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12 col-xs-12">
+            <div className="col-md-6 col-sm-12 col-xs-12 text-center">
               <div className="my-5">
                 <i style={{fontSize:"1.5rem"}}>May you find the path which will lead you to the highest and truest of yourself.</i>
                 <p>- Pierre Teilhard de Chardin</p>

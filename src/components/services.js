@@ -107,9 +107,7 @@ const Services = (props) => (
                </div>
              </div>
            </div>
-
         </section>
-
         </>
       )}
     />

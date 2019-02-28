@@ -139,6 +139,7 @@
 }
 .intro-image {
    border-radius: 50%;
+
 }
 
 .feature {
@@ -147,6 +148,8 @@
   position: relative;
   max-width: 400px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heather-watson {
