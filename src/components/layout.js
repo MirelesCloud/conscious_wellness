@@ -11,6 +11,7 @@ import '../css/responsive.css'
 
 import Navigation from './navbar'
 import Footer from './footer'
+import SEO from './seo'
 
 const Layout = ({children}) => (
 
@@ -59,6 +60,7 @@ const Layout = ({children}) => (
           </Helmet>
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
+          <SEO/>
           <Navigation/>
             <div>
               {children}

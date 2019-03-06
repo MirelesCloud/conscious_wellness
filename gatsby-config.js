@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Heather Watson`,
     siteUrl: `https://consciouswellness.com`,
-    description: `Heather Watson - Conscious Wellness`,
+    description: `Conscious_Wellness`,
+    image: "/images/home/heather.png"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

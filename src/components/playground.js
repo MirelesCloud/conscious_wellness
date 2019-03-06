@@ -2,12 +2,12 @@ import React from 'react'
 
 class Example1 extends React.Component {
   render() {
+
     //const stringProps = JSON.stringify(this.props.myProp);
     return (
       <div>
         <h2>{this.props.myProp}</h2>
       </div>
-
     )
   }
 }
@@ -31,11 +31,17 @@ function Example4(props) {
   return <h3>Hello, {props.name}</h3>;
 }
 
+const MyParallax = () => (
+  <div>
+  </div>
+)
+
 const Layout = ({children}) => (
   <div className="container m-5">
     {children}
   </div>
 )
+
 
 const Playground = () => (
   <Layout>

@@ -3,7 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 
 
-const Banner = () => (
+
+const Banner = (props) => (
   <div>
     <StaticQuery
       query={graphql`
@@ -54,6 +55,7 @@ const Banner = () => (
             </div>
           </div>
         </section>
+
         </>
       )}
       />
