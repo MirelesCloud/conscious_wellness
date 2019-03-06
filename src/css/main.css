@@ -65,11 +65,11 @@
   transform: translate(-50%, -50%);
 }
 
-.header-container p {
-  font-size: 4.5rem;
+.title {
+  font-size: 5rem;
   font-weight: 300;
+  line-height: 2rem;
 }
-
 
 .logo {
   width: 110px;

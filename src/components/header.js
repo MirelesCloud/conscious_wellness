@@ -38,27 +38,18 @@ const Banner = () => (
           }}>
           <div className="container">
             <div className="row text-center">
-
               <div className="col-md-12 col-sm-12 col-xs-12" >
                 <div className="header-container" >
-                  <p style={{
-                      fontSize:"4.5rem",
-                      fontWeight:"300",
-                      lineHeight:"2rem",
-
-                    }}
-                   >
+                  <p className="title">
                     Heather Watson
                   </p>
                   <p style={{
                       fontSize:"1.3rem",
                       fontWeight:"100",
-
                     }}>Holistic Health Practioner - Wellness Educator</p>
                   <hr />
-                  <p style={{fontSize:"1.8rem"}}>Empowering You to Optimal Health</p>
+                  <p style={{fontSize:"1.8rem"}}>Conscious Wellness</p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -68,7 +59,5 @@ const Banner = () => (
       />
   </div>
 )
-
-
 
 export default Banner

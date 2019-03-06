@@ -50,6 +50,20 @@ const Services = (props) => (
               }
             }
           }
+          classes: file(relativePath: {eq: "images/ben-white-132978-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          events: file(relativePath: {eq: "images/ameen-fahmy-558595-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
         }
       `}
       render={data => (
@@ -60,19 +74,17 @@ const Services = (props) => (
                <h1 className="title">My Services</h1>
                <hr className="mb-5"/>
                <div className="row ">
-                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5" >
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5" >
                    <Link to="/allergy" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.allergy.childImageSharp.fluid} />
-
                      </figure>
                      <div className="service-description">
                        <h1>Allergy Treatment</h1>
                      </div>
                    </Link>
-
                  </div>
-                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/reiki" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.reiki.childImageSharp.fluid}/>
@@ -81,9 +93,8 @@ const Services = (props) => (
                        <h1>Reiki</h1>
                      </div>
                    </Link>
-
                  </div>
-                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/biofeedback" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.quantum.childImageSharp.fluid}/>
@@ -92,15 +103,34 @@ const Services = (props) => (
                        <h1>Biofeedback</h1>
                      </div>
                    </Link>
-
                  </div>
-                 <div className="col-md-6 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/intuitive" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.intuitive.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h1>Intuitive Sessions</h1>
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                   <Link to="/classes" className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.classes.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h1>Classes</h1>
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                   <Link to="/events" className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.events.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h1>Events</h1>
                      </div>
                    </Link>
                  </div>
