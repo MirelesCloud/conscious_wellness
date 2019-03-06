@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Heather Watson`,
-    siteUrl: `https://consciouswellness.com`,
+    url: `https://consciouswellness.com`,
     description: `Conscious_Wellness`,
     image: "/images/home/heather.png"
   },

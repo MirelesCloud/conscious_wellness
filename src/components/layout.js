@@ -11,7 +11,7 @@ import '../css/responsive.css'
 
 import Navigation from './navbar'
 import Footer from './footer'
-import SEO from './seo'
+import SEO from './SEO.js'
 
 const Layout = ({children}) => (
 
