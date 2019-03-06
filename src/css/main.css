@@ -209,11 +209,12 @@
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   transition: transform .9s;
+  box-shadow: 5px 5px 8px #888888;
 
 }
 
