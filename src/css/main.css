@@ -389,6 +389,11 @@
 
 }
 
+/*Footer*/
+.footer a{
+  color: rgba(39,62,84,1);
+}
+
 /*Gallery Section*/
 .gallery {
   display: grid;

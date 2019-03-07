@@ -49,7 +49,7 @@ class TestimonialContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(this.nextQuote, 5000);
+    this.interval = setInterval(this.nextQuote, 10000);
   }
 
   componentWillUnmount() {
