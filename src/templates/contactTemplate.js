@@ -10,17 +10,19 @@ export default function contactTemplate({ data }) {
 
   return (
     <Layout>
-      <div className="container">
-        <h1 className="my-5">{ frontmatter.title }</h1>
-        <div className="row">
-          <div className="col-md-4 col-sm-12 col-xs-12 my-3">
-            <Img fluid={frontmatter.image.childImageSharp.fluid}/>
-          </div>
-          <div className="col-md-8 col-sm-12 col-xs-12 my-3">
-            <ContactForm/>
+      <section className="jumbotron">
+        <div className="container">
+          <h1 className="my-5">{ frontmatter.title }</h1>
+          <div className="row">
+            <div className="col-md-4 col-sm-12 col-xs-12 my-3">
+              <Img fluid={frontmatter.image.childImageSharp.fluid}/>
+            </div>
+            <div className="col-md-8 col-sm-12 col-xs-12 my-3">
+              <ContactForm/>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }

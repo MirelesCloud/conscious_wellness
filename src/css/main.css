@@ -26,7 +26,9 @@
 
 /*Navbar*/
 .navbar {
-
+  background: rgba(39,62,84,1);
+  top: 0;
+  width: 100%;
   font-size: 1.1rem;
 }
 
@@ -37,6 +39,15 @@
   margin-right: 50px
 }
 
+.navbar .navbar-dropdown .nav-link {
+  color: #000;
+}
+
+.navbar .navbar-dropdown .nav-link:hover{
+  color: rgba(72,72,72,0.8);
+}
+
+
 /*Header*/
 .hero-image {
   background-position: center;
@@ -44,8 +55,8 @@
   position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-
+  overflow: hidden;
+  color: #fff;
 }
 
 .banner-container {
@@ -57,7 +68,8 @@
 
 .header-container {
   background: rgba(39,62,84,0.42);
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
   color: #fff;
   position: relative;
   top: 50%;
@@ -383,11 +395,6 @@
   grid-template-columns: 1fr;
 }
 
-/*Footer*/
-footer {
-  margin-top: 100px;
-  position: relative;
-}
 
 /*Button Style*/
 .btn-style {

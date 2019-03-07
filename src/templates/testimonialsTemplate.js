@@ -9,20 +9,22 @@ export default function testimonialsTemplate({ data }) {
 
   return (
     <Layout>
-      <div className="container">
-        <h1 className="my-5">{ frontmatter.title }</h1>
-        <div className="row">
-          <div className="col-md-4 col-sm-12 col-xs-12">
-            <Img fluid={frontmatter.image.childImageSharp.fluid}/>
-          </div>
-          <div className="col-md-8 col-sm-12 col-xs-12">
-            <div
-                className="blog-post-content mt-3"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+      <section className="jumbotron">
+        <div className="container">
+          <h1 className="my-5">{ frontmatter.title }</h1>
+          <div className="row">
+            <div className="col-md-4 col-sm-12 col-xs-12">
+              <Img fluid={frontmatter.image.childImageSharp.fluid}/>
+            </div>
+            <div className="col-md-8 col-sm-12 col-xs-12">
+              <div
+                  className="blog-post-content mt-3"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
