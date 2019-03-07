@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
@@ -22,7 +22,11 @@ export default function serviceTemplate({ data }) {
               />
           </div>
         </div>
+        <button className="btn btn-primary btn-lg mt-3">
+        <Link to="/" style={{color:"#fff"}}>&#171; Back</Link>
+        </button>
       </div>
+
     </Layout>
   )
 }

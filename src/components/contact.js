@@ -29,7 +29,7 @@ const Contact = () => (
                   <div className="contact-container ">
                     <p className="contact-header text-uppercase" style={{color:"#fff"}}>Work with Me</p>
                     <Link to="/contact">
-                      <button type="button" className="btn btn-outline-dark btn-lg mt-5">
+                      <button type="button" className="btn btn-dark btn-lg mt-5">
                         <ScrollAnimation delay={1000}
                           animateIn='tada'
                           initiallyVisible={true}>

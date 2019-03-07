@@ -71,36 +71,36 @@ const Services = (props) => (
         <section className="services">
            <div className="jumbotron">
              <div className="container">
-               <h1 className="title">My Services</h1>
+               <h3 className="title">My Services</h3>
                <hr className="mb-5"/>
                <div className="row ">
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5" >
-                   <Link to="/allergy" className="service-container">
-                     <figure className="service-item">
-                       <Img fluid={data.allergy.childImageSharp.fluid} />
-                     </figure>
-                     <div className="service-description">
-                       <h1>Allergy Treatment</h1>
-                     </div>
-                   </Link>
-                 </div>
                  <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/reiki" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.reiki.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Reiki</h1>
+                       <h3>Reiki</h3>
                      </div>
                    </Link>
                  </div>
                  <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
-                   <Link to="/biofeedback" className="service-container">
+                   <Link to="/quantumtouch" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.quantum.childImageSharp.fluid}/>
+                       <Img fluid={data.classes.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Biofeedback</h1>
+                       <h3>Quantum Touch</h3>
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5" >
+                   <Link to="/allergy" className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.allergy.childImageSharp.fluid} />
+                     </figure>
+                     <div className="service-description">
+                       <h3>Allergy Treatment</h3>
                      </div>
                    </Link>
                  </div>
@@ -110,17 +110,17 @@ const Services = (props) => (
                        <Img fluid={data.intuitive.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Intuitive Sessions</h1>
+                       <h3>Intuitive Sessions</h3>
                      </div>
                    </Link>
                  </div>
                  <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
-                   <Link to="/classes" className="service-container">
+                   <Link to="/biofeedback" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.classes.childImageSharp.fluid}/>
+                       <Img fluid={data.quantum.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Classes</h1>
+                       <h3>Biofeedback</h3>
                      </div>
                    </Link>
                  </div>
@@ -130,7 +130,7 @@ const Services = (props) => (
                        <Img fluid={data.events.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h1>Events</h1>
+                       <h3>Events</h3>
                      </div>
                    </Link>
                  </div>

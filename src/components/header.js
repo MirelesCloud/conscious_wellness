@@ -1,9 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
 
-
-
-
 const Banner = (props) => (
   <div>
     <StaticQuery
@@ -34,28 +31,27 @@ const Banner = (props) => (
       `}
       render={data => (
         <>
-        <section className="jumbotron hero-image" style={{
-            backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`,
-          }}>
-          <div className="container">
-            <div className="row text-center">
-              <div className="col-md-12 col-sm-12 col-xs-12" >
-                <div className="header-container" >
-                  <p className="title">
-                    Heather Watson
-                  </p>
-                  <p style={{
-                      fontSize:"1.3rem",
-                      fontWeight:"100",
-                    }}>Holistic Health Practioner - Wellness Educator</p>
-                  <hr />
-                  <p style={{fontSize:"1.8rem"}}>Conscious Wellness</p>
+        <section className="jumbotron" style={{  backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`}}>
+            <div className="hero-image">
+              <div className="container">
+                <div className="row text-center">
+                  <div className="col-md-12 col-sm-12 col-xs-12" >
+                    <div className="header-container" >
+                      <p className="title">
+                        Heather Watson
+                      </p>
+                      <p style={{
+                          fontSize:"1.3rem",
+                          fontWeight:"100",
+                        }}>Holistic Health Practioner - Wellness Educator</p>
+                      <hr />
+                      <p style={{fontSize:"2rem"}}>Conscious Wellness</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
         </section>
-
         </>
       )}
       />

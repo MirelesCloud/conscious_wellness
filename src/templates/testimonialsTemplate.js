@@ -17,7 +17,7 @@ export default function testimonialsTemplate({ data }) {
           </div>
           <div className="col-md-8 col-sm-12 col-xs-12">
             <div
-                className="blog-post-content"
+                className="blog-post-content mt-3"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
           </div>
