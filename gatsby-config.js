@@ -5,7 +5,6 @@ module.exports = {
     description: `Conscious Wellness`,
     image: "/images/home/heather.png",
     siteLanguage: 'en',
-
     siteIconSmall: '/favicon-192x192.png',
     siteIconLarge: '/favicon-512x512.png',
     author: 'MirelesCloud',

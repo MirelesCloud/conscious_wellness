@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+import Zoom from 'react-reveal/Zoom'
 
 const TESTIMONIALSPATHS = [
   {
@@ -59,10 +60,10 @@ class TestimonialContainer extends React.Component {
   render() {
     let src = TESTIMONIALSPATHS[this.state.currentQuote];
     return (
-      <div>
-        <p style={{fontSize:"1.3rem"}}>"{src.quote}"</p>
-        <p>-{src.name}</p>
-      </div>
+      <Zoom>
+          <p style={{fontSize:"1.3rem"}}>"{ src.quote }"</p>
+          <p>-{ src.name }</p>
+      </Zoom>
     )
   }
 }
@@ -85,7 +86,7 @@ const Intro= () => (
             }
           }
         }
-        featureBackground: file(relativePath: {eq: "images/icon/conscious-wellness-logo-04.jpg"}) {
+        logo: file(relativePath: {eq: "images/logo.png"}) {
           childImageSharp {
             fluid(maxWidth: 2048) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -98,17 +99,18 @@ const Intro= () => (
       <>
       <section>
           <div className="container">
-            <div className="row">
+            <div className="row text-center">
               <div className="col-md-6 col-sm-12 col-xs-12">
                 <div className="feature">
                 <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12 col-xs-12 text-center">
-              <div className="my-5">
+            <div className="col-md-6 col-sm-12 col-xs-12">
+              <div className="my-2">
                 <TestimonialContainer/>
+                  <Img fluid={data.logo.childImageSharp.fluid} style={{maxWidth:"100px", height:"auto", marginLeft:"auto", marginRight:"auto"}}/>
               </div>
-          </div>
+           </div>
           </div>
         </div>
         <div className="jumbotron intro"
