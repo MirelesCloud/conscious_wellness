@@ -2,8 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Heather Watson`,
     url: `https://consciouswellness.com`,
-    description: `Conscious_Wellness`,
-    image: "/images/home/heather.png"
+    description: `Conscious Wellness`,
+    image: "/images/home/heather.png",
+    siteLanguage: 'en',
+
+    siteIconSmall: '/favicon-192x192.png',
+    siteIconLarge: '/favicon-512x512.png',
+    author: 'MirelesCloud',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
