@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
 const About = () => (
-  <div>
     <StaticQuery
       query={graphql`
         query AboutQuery {
@@ -27,7 +26,6 @@ const About = () => (
                   }}>
                   <Img fluid={data.file.childImageSharp.fluid}/>
                 </figure>
-
               </div>
               <div className="col-md-6 col-sm-12 col-xs-12">
                 <div >
@@ -46,8 +44,6 @@ const About = () => (
         </>
       )}
     />
-  </div>
-
 )
 
 export default About
