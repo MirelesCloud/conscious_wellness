@@ -15,7 +15,7 @@ const Services = (props) => (
               }
             }
           }
-          logo: file(relativePath: {eq: "images/icon/conscious-wellness-logo-white-18px-05.png"}) {
+          quantum: file(relativePath: {eq: "images/quantum-touch-square.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -43,7 +43,7 @@ const Services = (props) => (
               }
             }
           }
-          quantum: file(relativePath: {eq: "images/cristian-newman-141875-unsplash.jpg"}) {
+          biofeedback: file(relativePath: {eq: "images/cristian-newman-141875-unsplash.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -87,7 +87,7 @@ const Services = (props) => (
                  <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/quantumtouch" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.classes.childImageSharp.fluid}/>
+                       <Img fluid={data.quantum.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h3>Quantum Touch</h3>
@@ -117,7 +117,7 @@ const Services = (props) => (
                  <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/biofeedback" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.quantum.childImageSharp.fluid}/>
+                       <Img fluid={data.biofeedback.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h3>Biofeedback</h3>

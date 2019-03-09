@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import Zoom from 'react-reveal/Zoom'
 
 const TESTIMONIALSPATHS = [
@@ -60,10 +60,10 @@ class TestimonialContainer extends React.Component {
   render() {
     let src = TESTIMONIALSPATHS[this.state.currentQuote];
     return (
-      <Zoom>
-          <p style={{fontSize:"1.3rem"}}>"{ src.quote }"</p>
-          <p>-{ src.name }</p>
-      </Zoom>
+      <div>
+        <p style={{fontSize:"1.3rem"}}>"{ src.quote }"</p>
+        <p>-{ src.name }</p>
+      </div>
     )
   }
 }
@@ -101,9 +101,11 @@ const Intro= () => (
           <div className="container">
             <div className="row text-center">
               <div className="col-md-6 col-sm-12 col-xs-12">
-                <div className="feature">
-                <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
-              </div>
+                <Zoom>
+                  <div className="feature">
+                   <Img className="intro-image" fluid={data.feature.childImageSharp.fluid}/>
+                  </div>
+                </Zoom>
             </div>
             <div className="col-md-6 col-sm-12 col-xs-12">
               <div className="my-2">
@@ -119,13 +121,14 @@ const Intro= () => (
           <div className="container">
             <div className="row">
               <div className="col">
-                <p className="greeting">Welcome/Bienvenidos!</p>
+                <p className="greeting" style={{lineHeight:"10%"}}>Welcome!</p>
+                <p className="greeting" style={{lineHeight:"70%"}}><small>Bienvienidos!</small></p>
                 <p className="lead">My mission is to help heal clients and empower them to attain the optimal health they want and deserve.</p>
                   <hr className="my-4"/>
                 <p>I provide education and tools for you to achieve your optimal health. Humans are more than just a body part or a dis-ease. There is an interconnectedness of the body, mind and soul, and each are affected by the other. So our therapies work with the whole person.</p>
                 <p>Hablo espanol!</p>
                 <p className="lead">
-                  <button type="button" className="btn btn-outline-light btn-lg">Learn More</button>
+                  <Link to="/contact" type="button" className="btn btn-light btn-lg">Contact Me</Link>
                 </p>
               </div>
             </div>
