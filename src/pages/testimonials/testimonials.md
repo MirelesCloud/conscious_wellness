@@ -103,6 +103,6 @@ Heather is an exceptional healer and a kind, caring person. I would not hesitate
 
 I may be a staunch atheist, however I have an open mind. I’ve been doing remote sessions with Heather for a number of years now. I’m amazed with Heather’s work. She has helped me tremendously in getting through difficult times.
 
-*-- Molly*
+*-- Alex*
 
 ---
