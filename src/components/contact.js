@@ -29,7 +29,7 @@ const Contact = () => (
                   <div className="contact-container ">
                     <p className="contact-header text-uppercase" style={{color:"#fff"}}>Work with Me</p>
                     <Link to="/contact">
-                      <button type="button" className="btn btn-dark btn-lg mt-5">
+                      <button type="button" className="btn btn-dark btn-lg mt-5 mr-2">
                         <ScrollAnimation delay={1000}
                           animateIn='tada'
                           initiallyVisible={true}>
@@ -37,6 +37,13 @@ const Contact = () => (
                         </ScrollAnimation>
                       </button>
                     </Link>
+                    
+                    <button type="button" className="btn btn-dark btn-lg mt-5">
+                      <a target="_top" style={{color:"#fff"}}
+                        href="https://squareup.com/appointments/book/FTJHJJCD1JZEZ/heather-watson-conscious-wellness-sonora-ca" rel="nofollow">Book an Appointment
+                      </a>
+                    </button>
+
 
                   </div>
 
