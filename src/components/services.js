@@ -36,7 +36,7 @@ const Services = (props) => (
               }
             }
           }
-          intuitive: file(relativePath: {eq: "images/dingzeyu-li-773-unsplash.jpg"}) {
+          intuitive: file(relativePath: {eq: "images/intuitive.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -50,14 +50,7 @@ const Services = (props) => (
               }
             }
           }
-          whatisthis: file(relativePath: {eq: "images/ben-white-132978-unsplash.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 200, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
-          }
-          events: file(relativePath: {eq: "images/ameen-fahmy-558595-unsplash.jpg"}) {
+          events: file(relativePath: {eq: "images/events.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG

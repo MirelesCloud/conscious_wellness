@@ -1,7 +1,7 @@
 ---
 path: "/intuitive"
 title: "Intuitive Sessions"
-image: "../../images/dingzeyu-li-773-unsplash.jpg"
+image: "../../images/intuitive.jpg"
 ---
 
 My mission is to help other sensitives empower themselves and develop the tools they need to succeed and thrive in their lives. Your sessions with me will help you to heal and guide your decisions toward what is in your best interests.
