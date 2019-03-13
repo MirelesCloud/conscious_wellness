@@ -6,7 +6,7 @@ const About = () => (
     <StaticQuery
       query={graphql`
         query AboutQuery {
-          file(relativePath: { eq: "images/home/heather-about.jpg" }) {
+          file(relativePath: { eq: "images/home/heather-watson.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -24,7 +24,7 @@ const About = () => (
                 <figure style={{
                     maxWidth:"80%", height:"auto", marginLeft:"auto", marginRight:"auto"
                   }}>
-                  <Img fluid={data.file.childImageSharp.fluid} style={{transform: "scaleX(-1)"}}/>
+                  <Img fluid={data.file.childImageSharp.fluid} />
                 </figure>
               </div>
               <div className="col-md-6 col-sm-12 col-xs-12">

@@ -126,7 +126,7 @@ const Intro= () => (
                 <p className="lead">My mission is to help heal clients and empower them to attain the optimal health they want and deserve.</p>
                   <hr className="my-4"/>
                 <p>I provide education and tools for you to achieve your optimal health. Humans are more than just a body part or a dis-ease. There is an interconnectedness of the body, mind and soul, and each are affected by the other. So our therapies work with the whole person.</p>
-                <p>Hablo espanol!</p>
+                <p>Hablo español!</p>
                 <p className="lead">
                   <Link to="/contact" type="button" className="btn btn-light btn-lg">Contact Me</Link>
                 </p>
