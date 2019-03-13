@@ -1,7 +1,7 @@
 ---
 path: "/biofeedback"
 title: "Biofeedback"
-image: "../../images/cristian-newman-141875-unsplash.jpg"
+image: "../../images/biofeedback.jpg"
 ---
 
 Biofeedback is a systems that measures stress on the body. Biofeedback uses electronic equipment to monitor people’s internal physiological states and gives feedback that helps the recipient learn how to control these states, to activate balance, to let go of them, or to recover from them. It is a stress reduction vibrational energy therapy. Because it uses energy on the Quantum level distance healing is possible, similarly to Reiki and other distance healing techniques.

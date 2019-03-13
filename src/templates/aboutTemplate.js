@@ -71,7 +71,6 @@ export default function aboutTemplate({ data }) {
               </a>
             </div>
           </div>
-
         </div>
       </section>
     </Layout>

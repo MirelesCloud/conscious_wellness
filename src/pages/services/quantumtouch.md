@@ -19,3 +19,7 @@ One of the real joys of this work is that we truly don't know the limits of what
 Click below to find out more.
 
 https://www.quantumtouch.com/en/instructor/heather-watson
+
+You can also read my article on the subject here.
+
+http://www.icontact-archive.com/tryeKPuw85OvNb2kjTumByRARQUeRhxg?w=2

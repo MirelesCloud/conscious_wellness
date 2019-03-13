@@ -37,13 +37,17 @@ const Contact = () => (
                         </ScrollAnimation>
                       </button>
                     </Link>
-                    
+
                     <button type="button" className="btn btn-dark btn-lg mt-5">
                       <a target="_top" style={{color:"#fff"}}
-                        href="https://squareup.com/appointments/book/FTJHJJCD1JZEZ/heather-watson-conscious-wellness-sonora-ca" rel="nofollow">Book an Appointment
+                        href="https://squareup.com/appointments/book/FTJHJJCD1JZEZ/heather-watson-conscious-wellness-sonora-ca" rel="nofollow">
+                        <ScrollAnimation delay={1000}
+                          animateIn='tada'
+                          initiallyVisible={true}>
+                          Book an Appointment
+                        </ScrollAnimation>
                       </a>
                     </button>
-
 
                   </div>
 

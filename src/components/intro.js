@@ -9,7 +9,7 @@ const TESTIMONIALSPATHS = [
     'name': 'April Walker, Sonora, CA'
   },
   {
-    'quote': 'A true healer for me is one who has the ability to connect with what needs tending in order to  bring me back into wholeness.',
+    'quote': 'Heather\'s ability to access her many gifts simultaneously is what makes her healings so powerful. She is a healer\'s healer.',
     'name': 'Shaun E. Herbst, Lizzie Moon, Many Blooms!, Sonora, CA'
   },
   {
@@ -17,7 +17,7 @@ const TESTIMONIALSPATHS = [
     'name': 'Donica Salazar, Sonora, CA'
   },
   {
-    'quote': 'The best thing that Ive every done for my body, mind and soul.',
+    'quote': 'The best thing that I\'ve ever done for my body, mind and soul. I am not sure where I would be without Heather.',
     'name': 'Maggie May, Sonora, CA'
   },
   {
@@ -126,7 +126,7 @@ const Intro= () => (
                 <p className="lead">My mission is to help heal clients and empower them to attain the optimal health they want and deserve.</p>
                   <hr className="my-4"/>
                 <p>I provide education and tools for you to achieve your optimal health. Humans are more than just a body part or a dis-ease. There is an interconnectedness of the body, mind and soul, and each are affected by the other. So our therapies work with the whole person.</p>
-                <p>Hablo español!</p>
+                <p>¡Hablo español!</p>
                 <p className="lead">
                   <Link to="/contact" type="button" className="btn btn-light btn-lg">Contact Me</Link>
                 </p>

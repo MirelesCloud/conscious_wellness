@@ -43,7 +43,7 @@ const Services = (props) => (
               }
             }
           }
-          biofeedback: file(relativePath: {eq: "images/cristian-newman-141875-unsplash.jpg"}) {
+          biofeedback: file(relativePath: {eq: "images/biofeedback.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
