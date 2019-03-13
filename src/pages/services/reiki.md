@@ -7,5 +7,3 @@ image: "../../images/reiki.jpg"
 I am also have master level Reiki certification. I have taken Reiki from two different instructors and found that it varies widely with who teaches it. I continue to learn as much as I can so I may bring it to my clients.
 
 I usually combine both Quantum Touch and Reiki during my session so you get the benefits of both. It is a powerful combination which super charges your experience. Both are hands on energy healing. Both move energy which is stuck so that your body can heal and distress. Most clients who are used to Reiki treatments find that both are much more powerful together. I am also able to see energy and help you move it better through your body and activate your own gifts.
-
-Disclaimer: Heather Watson does not claim to treat or heal specific conditions; the effectiveness of Quantum-Touch is based on an individual’s ability to heal and the results will vary. Ultimately if the body can, it will heal itself and Quantum-Touch may accelerate that process.

@@ -64,6 +64,20 @@ const Services = (props) => (
               }
             }
           }
+          events: file(relativePath: {eq: "images/ameen-fahmy-558595-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          emotion: file(relativePath: {eq: "images/emmanuelle-guerrero-1373127-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
         }
       `}
       render={data => (
@@ -74,7 +88,7 @@ const Services = (props) => (
                <h3 className="title">My Services</h3>
                <hr className="mb-5"/>
                <div className="row ">
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/reiki" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.reiki.childImageSharp.fluid}/>
@@ -84,7 +98,7 @@ const Services = (props) => (
                      </div>
                    </Link>
                  </div>
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/quantumtouch" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.quantum.childImageSharp.fluid}/>
@@ -94,7 +108,7 @@ const Services = (props) => (
                      </div>
                    </Link>
                  </div>
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5" >
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5" >
                    <Link to="/allergy" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.allergy.childImageSharp.fluid} />
@@ -104,7 +118,7 @@ const Services = (props) => (
                      </div>
                    </Link>
                  </div>
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/intuitive" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.intuitive.childImageSharp.fluid}/>
@@ -114,7 +128,7 @@ const Services = (props) => (
                      </div>
                    </Link>
                  </div>
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/biofeedback" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.biofeedback.childImageSharp.fluid}/>
@@ -124,13 +138,33 @@ const Services = (props) => (
                      </div>
                    </Link>
                  </div>
-                 <div className="col-md-4 col-sm-12 col-xs-12 text-center mb-5">
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/events" className="service-container">
                      <figure className="service-item">
                        <Img fluid={data.events.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
-                       <h3>Events</h3>
+                       <h3>Corporate Events</h3>
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
+                   <Link to="/classes" className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.biofeedback.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h3>Classes</h3>
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
+                   <Link to="/emotion-code" className="service-container">
+                     <figure className="service-item">
+                       <Img fluid={data.biofeedback.childImageSharp.fluid}/>
+                     </figure>
+                     <div className="service-description">
+                       <h3>Emotion Code</h3>
                      </div>
                    </Link>
                  </div>
