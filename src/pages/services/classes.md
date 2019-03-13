@@ -1,7 +1,7 @@
 ---
 path: "/classes"
 title: "Classes"
-image: "../../images/dingzeyu-li-773-unsplash.jpg"
+image: "../../images/classes.jpg"
 ---
 
 ### Energy Seeing Class

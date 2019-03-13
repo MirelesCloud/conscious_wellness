@@ -1,7 +1,7 @@
 ---
 path: "/events"
 title: "Corporate Events"
-image: "../../images/11001873_10153482331301549_6420084144089623308_n.jpg"
+image: "../../images/firewalking.jpg"
 ---
 
 ### Certified Fire Walking Instructor

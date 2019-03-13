@@ -50,7 +50,7 @@ const Services = (props) => (
               }
             }
           }
-          classes: file(relativePath: {eq: "images/ben-white-132978-unsplash.jpg"}) {
+          whatisthis: file(relativePath: {eq: "images/ben-white-132978-unsplash.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -64,14 +64,14 @@ const Services = (props) => (
               }
             }
           }
-          events: file(relativePath: {eq: "images/ameen-fahmy-558595-unsplash.jpg"}) {
+          classes: file(relativePath: {eq: "images/classes.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
-          emotion: file(relativePath: {eq: "images/emmanuelle-guerrero-1373127-unsplash.jpg"}) {
+          emotion: file(relativePath: {eq: "images/home/emotion-code.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 200, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -151,7 +151,7 @@ const Services = (props) => (
                  <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/classes" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.biofeedback.childImageSharp.fluid}/>
+                       <Img fluid={data.classes.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h3>Classes</h3>
@@ -161,7 +161,7 @@ const Services = (props) => (
                  <div className="col-md-3 col-sm-12 col-xs-12 text-center mb-5">
                    <Link to="/emotion-code" className="service-container">
                      <figure className="service-item">
-                       <Img fluid={data.biofeedback.childImageSharp.fluid}/>
+                       <Img fluid={data.emotion.childImageSharp.fluid}/>
                      </figure>
                      <div className="service-description">
                        <h3>Emotion Code</h3>

@@ -1,7 +1,7 @@
 ---
 path: "/emotion-code"
 title: "Emotion Code"
-image: "../../images/dingzeyu-li-773-unsplash.jpg"
+image: "../../images/home/emotion-code.jpg"
 ---
 
 ### Emotion Code
