@@ -76,6 +76,24 @@ export default class Navigation extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <a target="_top" style={{
+                  backgroundColor: "rgba(55, 23, 151, 0.1)",
+                  color: "white",
+                  height: "40px",
+                  textTransform: "uppercase",
+                  letterSpacing: "1px",
+                  lineHeight: "40px",
+                  padding: "0 28px",
+                  borderRadius: "3px",
+                  fontWeight: "500",
+                  fontSize: "14px",
+                  cursor: "pointer",
+                  display: "inline-block"
+                  }}
+                  href="https://squareup.com/appointments/book/FTJHJJCD1JZEZ/heather-watson-conscious-wellness-sonora-ca" rel="nofollow">Book an Appointment
+                </a>
+              </NavItem>
             </ul>
           </Collapse>
       </Navbar>

@@ -44,7 +44,7 @@ const Banner = (props) => (
                         <p style={{
                             fontSize:"1.3rem",
                             fontWeight:"100",
-                          }}>Holistic Health Practioner - Wellness Educator</p>
+                          }}>Holistic Health Services - Wellness Education</p>
                         <hr />
                         <p style={{fontSize:"2rem"}}>Conscious Wellness</p>
                     </div>
