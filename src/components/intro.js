@@ -66,7 +66,7 @@ class TestimonialContainer extends React.Component {
     return (
       <div>
         <p style={{fontSize:"1.3rem"}}>"{ src.quote }"</p>
-        <p>-{ src.name }</p>
+        <p style={{lineHeight:"1px"}}>-{ src.name }</p>
       </div>
     )
   }
