@@ -1,7 +1,7 @@
 ---
 path: "/events"
 title: "Corporate Events"
-image: "../../images/dingzeyu-li-773-unsplash.jpg"
+image: "../../images/11001873_10153482331301549_6420084144089623308_n.jpg"
 ---
 
 ### Certified Fire Walking Instructor

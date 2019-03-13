@@ -74,11 +74,13 @@ export default class Navigation extends React.Component {
                   <DropdownItem>
                     <Link className="nav-link" to="/classes">Classes</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link className="nav-link" to="/emotion-code">Emotion Code</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <a target="_top" style={{
-                  backgroundColor: "rgba(55, 23, 151, 0.1)",
                   color: "white",
                   height: "40px",
                   textTransform: "uppercase",
@@ -89,7 +91,8 @@ export default class Navigation extends React.Component {
                   fontWeight: "500",
                   fontSize: "14px",
                   cursor: "pointer",
-                  display: "inline-block"
+                  display: "inline-block",
+                  border: "1px solid #fff"
                   }}
                   href="https://squareup.com/appointments/book/FTJHJJCD1JZEZ/heather-watson-conscious-wellness-sonora-ca" rel="nofollow">Book an Appointment
                 </a>
