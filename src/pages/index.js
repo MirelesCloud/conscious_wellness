@@ -21,7 +21,7 @@ const TemplateWrapper = ({data}) => (
     <About/>
     <Contact/>
       <ScrollToTop showUnder={160} className="scroll-top" style={{
-          background:"#3954a5",
+          background:"rgba(39,62,84)",
           width: "50px",
           height: "50px",
           borderRadius: "50%",

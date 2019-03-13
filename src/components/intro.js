@@ -6,31 +6,35 @@ import Zoom from 'react-reveal/Zoom'
 const TESTIMONIALSPATHS = [
   {
     'quote': 'You are in good hands with Heather! She is an amazing healer and teacher.',
-    'name': 'April Walker, Sonora, CA'
+    'name': 'April Walker'
   },
   {
     'quote': 'Heather\'s ability to access her many gifts simultaneously is what makes her healings so powerful. She is a healer\'s healer.',
-    'name': 'Shaun E. Herbst, Lizzie Moon, Many Blooms!, Sonora, CA'
+    'name': 'Shaun E. Herbst, Lizzie Moon, Many Blooms!'
   },
   {
     'quote': 'Heather Watson is a very talented healer. She is spot on and very present in her sessions.',
-    'name': 'Donica Salazar, Sonora, CA'
+    'name': 'Donica Salazar'
   },
   {
     'quote': 'The best thing that I\'ve ever done for my body, mind and soul. I am not sure where I would be without Heather.',
-    'name': 'Maggie May, Sonora, CA'
+    'name': 'Maggie May'
   },
   {
     'quote': 'Heather is such a gift to me and my children! She has cleared multiple allergies for my daughter and myself.',
-    'name': 'Marisa, Sonora, CA'
+    'name': 'Marisa, Sonora'
   },
   {
     'quote': 'From our first meeting, I knew I was about to experience a whole new perspective on health and wellness.',
-    'name': 'Bob Lippert, Sonora, CA'
+    'name': 'Bob Lippert'
   },
   {
     'quote': '[Heather] has vast knowledge in many areas of healing and brings this purity and peace during the sessions.',
     'name': 'Nicole Ottman - Holistic Health Practioner & Transformational Therapist'
+  },
+  {
+    'quote': 'Heather taught me techniques I still use today to protect my energy. I wholeheartedly recommend her to anyone who wants to improve their personal energy.',
+    'name': 'Sabrena Rose'
   }
 ];
 
