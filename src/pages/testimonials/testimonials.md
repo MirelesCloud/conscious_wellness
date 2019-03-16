@@ -27,6 +27,14 @@ The best thing that I've ever done for my body, mind and soul. I am not sure whe
 
 ---
 
+Heather is one of the purest healers I’ve ever met. She has a true natural ability to heal and such insight and clarity. She has a huge heart, and I know and can feel how much she cares and wants the best for me. I have no doubt her other clients feel the same way.
+Over the last several years, I’ve had numerous remote intuitive sessions with her. I do not exaggerate when I say that every session has been life-changing. I’ve seen the effects manifest in my life, and I have no words for how grateful I feel.
+Heather is an exceptional healer and a kind, caring person. I would not hesitate to recommend working with her to anyone. It would be one of the best decisions you could ever make for yourself and your loved ones.
+
+*-- Molly*
+
+---
+
 Heather is such a gift to me and my children! She has cleared multiple allergies for my daughter and myself. When I first came to her for my daughter, I was at the end of my rope. It seemed like everything was bothering her, food-wise. When we finished all of the allergy treatments, we could go back to eating normally. Such a relief! So, when my 2 month old started exhibiting signs of an allergy, I did not hesitate to have Heather treat my baby. After the treatment, he has been the happiest, easiest baby!
 
 *-- Marisa*
@@ -93,16 +101,19 @@ Since taking QT, I've committed to taking better care of myself both mentally an
 
 ---
 
-Heather is one of the purest healers I’ve ever met. She has a true natural ability to heal and such insight and clarity. She has a huge heart, and I know and can feel how much she cares and wants the best for me. I have no doubt her other clients feel the same way.
-Over the last several years, I’ve had numerous remote intuitive sessions with her. I do not exaggerate when I say that every session has been life-changing. I’ve seen the effects manifest in my life, and I have no words for how grateful I feel.
-Heather is an exceptional healer and a kind, caring person. I would not hesitate to recommend working with her to anyone. It would be one of the best decisions you could ever make for yourself and your loved ones.
-
-*-- Molly*
-
----
-
 I may be a staunch atheist, however I have an open mind. I’ve been doing remote sessions with Heather for a number of years now. I’m amazed with Heather’s work. She has helped me tremendously in getting through difficult times.
 
 *-- Alex*
+
+---
+
+Heather is an intuitive psychic healer that is able to connect to your mind and soul wherever you are. She’s lighthearted. She spoke to my soul and brought up and out of me the soul being that I am but have not been identifying with.  
+She is gifted, very powerful and well trained in her abilities.
+I feel the light in her presence. And leave always feeling renewed and at peace with my being.
+I recommend her for healing of the physical, spiritual and psychological sense.
+If you are uncertain of a path to choose she will  help you gain clarity and expose your role in the situation.
+I feel everyone should check in with her every now and again, even if you feel you don’t require healing or insight. She’ll call on your Angels and other unseen forces and connect you with your spiritual family.
+
+*-- Jana*
 
 ---
