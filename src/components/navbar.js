@@ -64,6 +64,9 @@ export default class Navigation extends React.Component {
                   <DropdownItem>
                     <Link className="nav-link" to="/biofeedback">Biofeedback</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link className="nav-link" to="/emotion-code">Emotion Code</Link>
+                  </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
                    Events
@@ -73,9 +76,6 @@ export default class Navigation extends React.Component {
                   </DropdownItem>
                   <DropdownItem>
                     <Link className="nav-link" to="/classes">Classes</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link className="nav-link" to="/emotion-code">Emotion Code</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

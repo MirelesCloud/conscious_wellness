@@ -16,7 +16,7 @@ const Footer = () => (
       </div>
       <div className="row mt-4">
         <div className="col-md-12 col-sm-12 col-xs-12">
-          <div className="copyright-text">&copy; 2019 <span>Conscious Wellness - </span> <span> Created by <a href="https://mirelescloud.com"><strong style={{color:"#000"}}>MirelesCloud</strong></a></span>.  All Rights Reserved</div>
+          <div className="copyright-text">&copy; 2019 <span>Conscious Wellness - </span> <span> Created by <a href="https://mirelescommunications.com" aria-label="Mireles Communications" target="_blank" rel="noopener noreferrer"><strong style={{color:"#000"}}>Mireles Communications</strong></a></span> in the <span><a href="https://mirelescloud.com" aria-label="MirelesCloud" target="_blank" rel="noopener noreferrer"><strong>MirelesCloud</strong></a></span>.  All Rights Reserved</div>
         </div>
         <div className="col-md-12 col-sm-12 col-xs-12 mt-4">
           <small><strong>Disclaimer:</strong> Heather Watson does not claim to treat or heal specific conditions; the effectiveness of her services are based on an individual’s ability to heal, and the results will vary. Ultimately, if the body can, it will heal itself, and these services may accelerate that process. These services do not take the place of a visit to your medical doctor.</small>
